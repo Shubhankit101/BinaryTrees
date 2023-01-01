@@ -31,7 +31,7 @@ void preOrder(Node *root,vector<int> &v)
 void print(vector<int> v)
 {
 //cout<<"SD";
-cout<<"PreOrder Traversal of Binary Tree is = ";
+cout<<"PreOrder Traversal of Binary Tree is : ";
 for(int i=0;v.size()>i;i++)
 {
   cout<<v[i]<<" ";
@@ -66,3 +66,5 @@ int main()
 
   return 0;
 }
+//Time Complexity : O(N)
+//Space Complexity : O(N)
