@@ -17,20 +17,19 @@ public:
   }
   Node(){}
 };
-void preOrder(Node *root,vector<int> &v)
+void inOrder(Node *root,vector<int> &v)
 {
  if(root==NULL)
  {
    return;
  }
- preOrder(root->left,v);
+ inOrder(root->left,v);
  v.push_back(root->data);
- preOrder(root->right,v);
+ inOrder(root->right,v);
 
 }
 void print(vector<int> v)
 {
-//cout<<"SD";
 cout<<"InOrder Traversal of Binary Tree is : ";
 for(int i=0;v.size()>i;i++)
 {
@@ -59,7 +58,7 @@ int main()
   vector<int> v;
 
 
-  preOrder(root,v);
+  inOrder(root,v);
 
   print(v);
 
