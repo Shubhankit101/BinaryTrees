@@ -16,6 +16,7 @@ public:
   }
   Node(){}
 };
+
 void print(vector<int> v)
 {
 cout<<"PreOrder Traversal of Binary Tree is : ";
@@ -33,7 +34,7 @@ vector<int> preOrder (Node* root)
     if(!root) return v; 
     stack<Node*> st;
     
-    st.push(root);
+    st.push(root); // Using a Stack and pushing the root.
     while(!st.empty())
     {
         Node* node = st.top();
@@ -69,8 +70,12 @@ int main()
   // calling preOrder function
    v = preOrder(root);
 
+  // Printing the vector
   print(v);
 
 
   return 0;
 }
+
+// Time Complexity = O(N)
+// Space Complexity = O(N) 
